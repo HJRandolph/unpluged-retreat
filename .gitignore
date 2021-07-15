@@ -4,3 +4,5 @@
 node_modules
 dist
 .cache
+css/.DS_Store
+about/.DS_Store
