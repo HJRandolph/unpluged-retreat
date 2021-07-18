@@ -6,3 +6,4 @@ dist
 .cache
 css/.DS_Store
 about/.DS_Store
+css/s-main.css
