@@ -109,9 +109,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
-}
 
 h2 {
  font-family: 'poppins', sans-serif;
@@ -132,11 +129,11 @@ p {
 }
  
 img {
- 
+  width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -195,6 +192,14 @@ header .content-wrapper {
   flex-flow: row wrap;
   margin: 0;
   
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav {
@@ -261,7 +266,9 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
-  
+  background: url("../img/woman-on-bridge.jpg") center no-repeat #333;
+  background-size: cover; 
+  min-height: 500px;
 }
 
 
@@ -281,13 +288,15 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: #0f0903;
-  
+  background: url("../img/picnic.jpg") center no-repeat #333;
+  background-size: cover;
 }
 
 .features h2 {
   margin-bottom: 60px;
 }
+
+
 
 .features article {
   width: 63%;
@@ -495,6 +504,10 @@ h3 {
   header {
     justify-content: space-around;
     padding: 33px 0;
+  }
+
+  header figure {
+    width: 34%;
   }
 
   header .content-wrapper {
