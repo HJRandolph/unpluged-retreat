@@ -615,6 +615,12 @@ h3 {
     justify-content: space-between;
     align-items: flex-start;
 }
+
+.map figure {
+  padding-bottom: 35%;
+  max-width: 100%;
+ }
+
   /* FAQ */
 
   .faq .content-wrapper {
@@ -728,6 +734,8 @@ h3 {
    .contact-section .content-wrapper h2 {
      width: 90%;
    }
+
+
 
    /* ==========================================================================
    FAQ Page
