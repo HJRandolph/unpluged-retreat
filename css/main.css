@@ -578,6 +578,11 @@ h3 {
   .features .features-item-description {
     width: 62%;
   }
+
+  .features i {
+    font-size: 3.75em;
+    margin-bottom: 40px;
+  }
   /* REVIEWS */
   .reviews article {
     display: flex;
