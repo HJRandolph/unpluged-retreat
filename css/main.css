@@ -121,6 +121,7 @@ h4 {
   font-family: 'poppins', sans-serif;
   font-weight: 500;
   font-size: 1.125em;
+  margin: 20px 0;
 }
  
 p {
@@ -173,6 +174,7 @@ input[type=button] {
 
 /* BASE HEADER FOOTER STYLES */
 header, footer {
+  background: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,16 +184,15 @@ header, footer {
 
 header {
   padding: 15px 0;
-  background: #202322;
+  
 }
 
 header .content-wrapper {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
-  
 }
 
 header figure {
@@ -203,19 +204,25 @@ header figure {
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
-  font-size: 1.125em;
-  font-weight: 700;
 }
 
 header nav ul {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  align-items: center;
+}
+
+header nav ul li {
+  font-size: 1.125em;
 }
 
 .header-divider {
@@ -262,13 +269,22 @@ footer .copyright {
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* HERO AREA */
+
 .hero-area {
+  background: url(../img/woman-on-bridge.jpg    );
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
-  flex-flow: wrap;
-  background: url("../img/woman-on-bridge.jpg") center no-repeat #333;
-  background-size: cover; 
-  min-height: 500px;
+  flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif; 
+  font-weight: 500; 
+  line-height: 1.2; 
 }
 
 
@@ -518,11 +534,11 @@ h3 {
 
   header {
     justify-content: space-around;
-    padding: 33px 0;
+    
   }
 
   header figure {
-    width: 34%;
+    width: 30%;
   }
 
   header .content-wrapper {
@@ -531,8 +547,8 @@ h3 {
   }
 
   header nav {
-    width: 20%;
-    font-weight: bold;
+    width: 30%;
+    
   }
 
   header nav ul {
@@ -543,11 +559,15 @@ h3 {
     display: none;
   }
   /* HERO AREA */
+  .hero-area {
+    min-height: 600px;
+  }
+  
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
     margin: 0;
-  }
+}
 
   /* ASIDE */
   aside .content-wrapper {
@@ -598,6 +618,10 @@ h3 {
     margin: 0;
   }
 
+  figure {
+    width: 49%;
+  }
+
   /* ABOUT */
   .mission-content {
     display: flex;
@@ -630,6 +654,7 @@ h3 {
 
   .faq .content-wrapper {
     justify-content: space-between;
+    
   }
 
   .faq-content {
@@ -695,7 +720,7 @@ h3 {
 
   /* Hero */
   .hero-area h1 {
-    width: 60%;
+    width: 80%;
     font-size: 3.75em;
   }
 
